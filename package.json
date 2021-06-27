@@ -10,9 +10,12 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@eva-design/eva": "^2.1.0",
+    "@ui-kitten/components": "^5.1.0",
     "react": "16.11.0",
     "react-native": "0.62.2",
-    "react-native-photoeditorsdk": "^2.8.0"
+    "react-native-photoeditorsdk": "^2.8.0",
+    "react-native-svg": "^12.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
