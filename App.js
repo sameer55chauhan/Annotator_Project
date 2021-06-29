@@ -6,19 +6,17 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import * as eva from '@eva-design/eva';
 import { ApplicationProvider, IconRegistry } from '@ui-kitten/components';
-import HomeScreen from './screens/HomeScreen';
+import { AppNavigator } from './navigation/index';
 import { default as theme } from './assets/app-theme/app-theme.json';
 import { EvaIconsPack } from '@ui-kitten/eva-icons';
 
 export default App = () => {
   return (
-    <NavigationContainer>
-      <SafeAreaView>
-        <IconRegistry icons={EvaIconsPack} />
-        <ApplicationProvider {...eva} theme={{ ...eva.dark, ...theme }}>
-          <HomeScreen />
-        </ApplicationProvider>
-      </SafeAreaView>
-    </NavigationContainer>
+    <>
+      <IconRegistry icons={EvaIconsPack} />
+      <ApplicationProvider {...eva} theme={eva.dark}>
+        <AppNavigator />
+      </ApplicationProvider>
+    </>
   );
 };
